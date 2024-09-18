@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reply_chats",
+  "info": {
+    "singularName": "reply-chat",
+    "pluralName": "reply-chats",
+    "displayName": "ReplyChat"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reply": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "reply_chats"
+    },
+    "dear_diary": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::dear-diary.dear-diary",
+      "inversedBy": "reply_chats"
+    }
+  }
+}

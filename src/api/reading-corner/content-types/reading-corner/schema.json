@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reading_corners",
+  "info": {
+    "singularName": "reading-corner",
+    "pluralName": "reading-corners",
+    "displayName": "ReadingCorner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "blocks"
+    },
+    "writter": {
+      "type": "string"
+    },
+    "photo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

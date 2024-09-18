@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_questions",
+  "info": {
+    "singularName": "form-question",
+    "pluralName": "form-questions",
+    "displayName": "FormQuestion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "mood": {
+      "type": "string"
+    }
+  }
+}
